@@ -6,10 +6,15 @@ const ticketRouter = require("./src/routers/ticket.routes");
 const cors = require("cors");
 require("dotenv").config();
 
+const corsOptions={
+    "origin": "*",
+    "methods": "GET,HEAD,PUT,PATCH,POST,DELETE"
+  }
+
 const port = process.env.PORT || 4000;
 
 const app = express();
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 

@@ -2,8 +2,8 @@ import styles from "../css/ticket.module.css";
 
 const Card = ({ ticket, fetchApi }) => {
   const { topic, status, severity, description, type } = ticket;
-  const assignApi = `http://localhost:4000/api/support-tickets/assign/${ticket._id}`;
-  const resolveApi = `http://localhost:4000/api/support-tickets/resolve/${ticket._id}`;
+  const assignApi = `https://ticket-assign-system.onrender.com/api/support-tickets/assign/${ticket._id}`;
+  const resolveApi = `https://ticket-assign-system.onrender.com/api/support-tickets/resolve/${ticket._id}`;
 
   const updateTicket = async (api) => {
     try {

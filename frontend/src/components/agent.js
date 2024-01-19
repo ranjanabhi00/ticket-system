@@ -11,7 +11,7 @@ const initAgentState={
 const Agent = () => {
     const [agentDetails,setAgentDetails]=useState(initAgentState);
 
-    const api='http://localhost:4000/api/support-agents'
+    const api='https://ticket-assign-system.onrender.com/api/support-agents'
 
    const handleChange=(e)=>{
       const {name,value}=e.target;

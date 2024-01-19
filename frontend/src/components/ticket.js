@@ -12,8 +12,8 @@ const initTicketDetails = {
 
 const Ticket = () => {
   const [ticketDetails, setTicketdetails] = useState(initTicketDetails);
-  const createTicketApi = "http://localhost:4000/api/support-tickets";
-  let getTicketApi = "http://localhost:4000/api/support-tickets";
+  const createTicketApi = "https://ticket-assign-system.onrender.com/api/support-tickets";
+  let getTicketApi = "https://ticket-assign-system.onrender.com/api/support-tickets";
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);

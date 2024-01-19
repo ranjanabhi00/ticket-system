@@ -10,7 +10,7 @@ export const severityData = ["Low", "Medium", "High"];
 const initFilter = {};
 
 const GetTickets = ({ data, loading, fetchApi, page, setPage, lastPage }) => {
-  let api = "http://localhost:4000/api/support-tickets";
+  let api = "https://ticket-assign-system.onrender.com/api/support-tickets";
   const limit = 4;
   const [filter, setFilter] = useState(initFilter);
 
