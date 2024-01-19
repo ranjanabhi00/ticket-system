@@ -8,7 +8,7 @@ require("dotenv").config();
 
 const corsOptions={
     "origin": "*",
-    "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "methods": "GET,PATCH,POST",
     "preflightContinue": false,
   }
 
