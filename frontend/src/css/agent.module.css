@@ -16,3 +16,9 @@ button {
   cursor: pointer;
   font-weight: 700;
 }
+.link{
+    margin: 20px auto;
+}
+.link link{
+    text-decoration: none;
+}

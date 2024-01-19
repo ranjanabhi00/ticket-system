@@ -8,7 +8,7 @@ require("dotenv").config();
 
 const corsOptions={
     "origin": "*",
-    "methods": "GET,HEAD,PUT,PATCH,POST,DELETE"
+    "methods": "*"
   }
 
 const port = process.env.PORT || 4000;

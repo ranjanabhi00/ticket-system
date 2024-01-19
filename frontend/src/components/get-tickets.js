@@ -35,6 +35,11 @@ const GetTickets = ({ data, loading, fetchApi, page, setPage, lastPage }) => {
     setFilter({});
   };
 
+  useEffect(()=>{
+    api +="?page=" + page + "&limit=" + limit;
+    fetchApi(api);
+  },[page])
+
   return (
     <div>
       <div>

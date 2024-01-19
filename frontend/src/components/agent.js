@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styles from '../css/agent.module.css'
+import { Link } from 'react-router-dom';
 
 const initAgentState={
     name:'',
@@ -64,13 +65,18 @@ const Agent = () => {
 
    }
   return (
+    <>
     <div className={styles.form}>
       <input type='text' placeholder='name' name='name' value={agentDetails.name} onChange={handleChange}/>  
       <input type='text' placeholder='email' name='email' value={agentDetails.email} onChange={handleChange}/>  
       <input type='text' placeholder='phone' name='phone' value={agentDetails.phone} onChange={handleChange}/>  
       <textarea  rows="10" cols="70" name='description' placeholder='description' value={agentDetails.description} onChange={handleChange}/>
       <button onClick={handleClick}>Create Agent</button>
+      <div className={styles.link}><Link to='/tickets'><span>Go to Tickets</span></Link></div>
     </div>
+      
+      
+    </>
   )
 }
 

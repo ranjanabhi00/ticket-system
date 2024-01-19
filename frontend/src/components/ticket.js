@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import GetTickets, { severityData, typeData } from "./get-tickets";
 import styles from "../css/ticket.module.css";
 import FilterBox from "./filterbox";
+import { Link } from "react-router-dom";
 
 const initTicketDetails = {
   topic: "",
@@ -91,6 +92,7 @@ const Ticket = () => {
           updateFilter={updateFilter}
         />
         <button onClick={handleClick}>Create Ticket</button>
+        <div><Link to='/'><span>Go to Agents</span></Link></div>
       </div>
       <GetTickets
         loading={loading}
