@@ -11,11 +11,22 @@
  - Resolving an assigned ticket (status:Resolved)
 
 # Steps to run locally
-- clone the repo
+- Clone the repo
 - Go to backend folder
 - npm install
-- create mongodb connection url 
-- create .env file and add key MONGODB_URI:<mongodburl> and PORT<port>
+- Create mongodb connection url 
+- Create .env file and add key MONGODB_URI:<mongodburl> and PORT<port>
 - npm start
 - Go to frontend
+- npm install
 - npm start
+- Can skip running backend server as backend deployed api's are there in frontend
+- Or change the api in frontend as well while running backend locally
+
+
+# List of api's
+- https://ticket-assign-system.onrender.com/api/support-agents (post request to create agent)
+- https://ticket-assign-system.onrender.com/api/support-tickets (post request to create ticket)
+- https://ticket-assign-system.onrender.com/api/support-tickets (get request to get all tickets,query parameters like status,type,severity,page,limit,sortVal can be added as well)
+- https://ticket-assign-system.onrender.com/api/support-tickets/assign/:id (patch request to assign ticket)
+- https://ticket-assign-system.onrender.com/api/support-tickets/resolve/:id (patch request to resolve assigned ticket)
